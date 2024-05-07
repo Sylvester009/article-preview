@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+  --GrayishBlue: hsl(212, 23%, 69%);
+  --LightGrayisBlue: hsl(210, 46%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--LightGrayisBlue);
+  display: flex;
+  flex-direction: column;
+  padding: 20% 7% 10%;
+}
+
+.main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.drawers {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.text-section {
+  padding: 10%;
+}
+
+.title,
+.avatar-name {
+  color: var(--VeryDarkGrayishBlue);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3rem;
+  margin: 3% 0% 6%;
+}
+
+.text,
+.date {
+  color: var(--GrayishBlue);
+  font-weight: 700;
+  line-height: 1.4rem;
+}
+
+.profile,
+.share-modal,
+.icons-div,
+.desktop-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.desktop-profile {
+  display: none;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+figcaption {
+  padding-left: 15px;
+}
+
+.avatar-name {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.share-icon,
+.desktop-share-icon {
+  width: 20%;
+  height: 20%;
+  background-color: var(--LightGrayisBlue);
+  padding: 5%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/**SHARE MODAL*/
+
+.share-modal,
+.desktop-share-modal {
+  justify-content: space-evenly;
+  background-color: var(--VeryDarkGrayishBlue);
+  opacity: 0.8;
+  color: #fff;
+  text-align: center;
+  padding: 5%;
+  border-radius: 5px;
+  display: none;
+  margin-top: 10%;
+}
+
+.share-modal span,
+.desktop-span {
+  letter-spacing: 0.3rem;
+  color: var(--LightGrayisBlue);
+}
+
+.fa-brands {
+  font-size: 20px;
+}
+
+.icons-div {
+  padding-top: 0;
+  justify-content: center;
+  margin-right: 15px;
+  gap: 15%;
+}
+
+.fa-brands:hover {
+  cursor: pointer;
+}
+
+.share-icon:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    padding: 10% 20% 0%;
+    max-height: 100vh;
+  }
+
+  .main {
+    flex-direction: row;
+    align-self: center;
+  }
+
+  .drawers {
+    height: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .text-section {
+    padding: 4% 4% 0%;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+  .profile,
+  .share-modal {
+    display: none;
+  }
+
+  .desktop-profile {
+    display: flex;
+  }
+
+  .profile {
+    margin-top: 20px;
+    padding-top: 35px;
+  }
+
+  .desktop-share-icon {
+    width: 15%;
+    height: 15%;
+  }
+
+  .desktop-share-modal {
+    display: none;
+    position: absolute;
+    width: 25%;
+    max-height: 8%;
+    left: 65%;
+    bottom: 45%;
+    padding: 2%;
+    margin: 0%;
+    align-items: center;
+  }
+
+  .desktop-share-icon:hover {
+    cursor: pointer;
+  }
+}
+
+/**Weights: 500, 700*/

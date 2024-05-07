@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Article preview component</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c78ada5197.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <section class="image-section">
+        <img src="images/drawers.jpg" alt="drawers" class="drawers" />
+      </section>
+      <section class="text-section">
+        <h1 class="title">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p class="text">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div class="profile" id="profile">
+          <img src="images/avatar-michelle.jpg" alt="avatar" class="avatar" />
+          <figure>
+            <figcaption>
+              <p class="avatar-name">Michelle Appleton</p>
+              <p class="date">28 Jun 2020</p>
+            </figcaption>
+          </figure>
+          <img
+            src="images/icon-share.svg"
+            alt="share icon"
+            class="share-icon"
+            id="share-icon"
+          />
+        </div>
+        <div class="share-modal" id="share-modal">
+          <span>SHARE</span>
+          <div class="icons-div">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <img
+            src="images/icon-share.svg"
+            alt="share icon"
+            class="share-icon"
+            id="return-icon"
+          />
+        </div>
+
+        <!--desktop-->
+        <div class="desktop-profile" id="desktop-profile">
+          <img src="images/avatar-michelle.jpg" alt="avatar" class="avatar" />
+          <figure>
+            <figcaption>
+              <p class="avatar-name">Michelle Appleton</p>
+              <p class="date">28 Jun 2020</p>
+            </figcaption>
+          </figure>
+          <img
+            src="images/icon-share.svg"
+            alt="share icon"
+            class="desktop-share-icon"
+            id="desktop-share-icon"
+          />
+        </div>
+      </section>
+      <div class="desktop-share-modal" id="desktop-share-modal">
+        <span class="desktop-span">SHARE</span>
+        <div class="icons-div">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
